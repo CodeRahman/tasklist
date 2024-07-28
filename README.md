@@ -2,7 +2,7 @@
 
 #Task List Webpage
 
-[![Contributors][Author-shield]]
+[Author-shield]
 
 
 
