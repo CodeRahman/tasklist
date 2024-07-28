@@ -1,0 +1,144 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #380404;
+}
+
+#head-text {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #fe0f0f;
+}
+
+.container {
+    width: 40%;
+    top: 30%;
+    left: 50%;
+    background: rgb(50, 34, 175);
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#newtask {
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 2px solid #4b33ff;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #52030f;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fe0f0f;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(50, 34, 175);
+    padding: 0 20px 30px;
+    margin-top: 0;
+    width: 100%;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.tasks.overflow {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.tasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tasks::-webkit-scrollbar-track {
+    background: #BAE6FF;
+    border-radius: 25px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+    background: #52030f;
+    border-radius: 25px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.task:last-child {
+    border-bottom: none; 
+}
+
+.delete {
+    right: -5px;
+    padding: 5px;
+    background: #900c0c;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#check-task {
+    margin-right: 10px;
+}
+
+.task label {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.task label p.checked {
+    text-decoration: line-through;
+}
+.uil{
+    color: #13ccc9;
+}
