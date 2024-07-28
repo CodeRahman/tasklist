@@ -8,5 +8,5 @@
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/AUTHOR:%20Abdurrahman%20Oyediran-red
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
